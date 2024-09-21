@@ -50,10 +50,6 @@ body {
     margin-bottom: 14px;
 }
 
-.links-container {
-    margin-top: 8px;
-}
-
 @media (max-width: 768px) {
     .info-container h1 {
         font-size: 36px;
