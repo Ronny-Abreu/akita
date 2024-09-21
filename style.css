@@ -47,11 +47,11 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .links-container {
-    margin-top: 1px;
+    margin-top: 8px;
 }
 
 @media (max-width: 768px) {
