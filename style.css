@@ -68,6 +68,10 @@ body {
     .info-container p {
         font-size: 15px;
     }
+
+    .links-container a {
+        margin-top: 20px;
+    }
 }
 
 strong {
