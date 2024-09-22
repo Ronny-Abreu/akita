@@ -25,6 +25,7 @@ body {
     justify-content: center;
     min-height: 80vh;
     padding-top: 100px;
+    max-width: 1111px;
 }
 
 .image-container img {
