@@ -1,4 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+@font-face {
+    font-family: 'FontLogo';
+    src: url('/fonts/pilowlava-master/Fonts/webfonts/Pilowlava-Atome.woff2') format('woff2'),
+    url('/fonts/pilowlava-master/Fonts/webfonts/Pilowlava-Atome.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NextFont';
+    src: url('/fonts/COOPBL.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.yatra-one-regular {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -24,12 +46,12 @@ body {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    margin-left: 280px;
+    margin-left: 250px;
 }
 
 .info-container h1 {
     padding-bottom: 15px;
-    font-family: "Onest", sans-serif;
+    font-family: "NextFont", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 65px;
@@ -40,38 +62,15 @@ body {
     font-style: normal;
     font-size: 20px;
     font-weight: 200;
-    margin-bottom: 14px;
-}
-
-@media (max-width: 768px) {
-    .info-container h1 {
-        font-size: 36px;
-    }
-
-    .info-container p {
-        font-size: 13px;
-        font-weight: bold;
-    }
-}
-
-@media (max-width: 480px) {
-    .info-container h1 {
-        font-size: 28px;
-    }
-
-    .info-container p {
-        font-size: 13px;
-        font-weight: bold;
-    }
-
-    .links-container a {
-        margin-top: 20px;
-    }
 }
 
 span {
     color: #20bcfc;
     font-weight: bold;
+}
+
+.links-container {
+    margin-left: 80px;
 }
 
 .button {
@@ -103,8 +102,7 @@ span {
 }
 
 .container2 {
-    margin-top: 60px;
-    
+    margin-top: 100px;
     display: flex;
     background-color: #1e1f23;
     padding: 20px;
@@ -126,4 +124,9 @@ h4 {
     margin-left: 60px;
     font-size: 23px;
 
+}
+
+
+.logo {
+    font-family: 'FontLogo', sans-serif;
 }
