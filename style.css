@@ -10,28 +10,21 @@ body {
     background: #0D0E12;
     color: #D1D5DB;
     font-family: 'Onest', system-ui, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 85vh;
-    text-align: center;
-    margin: 0;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    padding-top: 100px;
+    margin-left: 80px;
+    margin-top: 150px;
 }
 
 .image-container img {
-    width: 150px;
-    height: 150px;
+    align-items: center;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    padding-bottom: 5px;
+    margin-left: 280px;
 }
 
 .info-container h1 {
@@ -39,14 +32,14 @@ body {
     font-family: "Onest", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 48px;
+    font-size: 65px;
 }
 
 .info-container p {
     font-family: "Onest", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 200;
     margin-bottom: 14px;
 }
 
@@ -57,6 +50,7 @@ body {
 
     .info-container p {
         font-size: 13px;
+        font-weight: bold;
     }
 }
 
@@ -67,6 +61,7 @@ body {
 
     .info-container p {
         font-size: 13px;
+        font-weight: bold;
     }
 
     .links-container a {
@@ -74,8 +69,9 @@ body {
     }
 }
 
-strong {
+span {
     color: #20bcfc;
+    font-weight: bold;
 }
 
 .button {
@@ -106,3 +102,28 @@ strong {
     background-color: #3b4048;
 }
 
+.container2 {
+    margin-top: 60px;
+    
+    display: flex;
+    background-color: #1e1f23;
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    margin-left: 520px;
+    gap: 8px;
+}
+
+svg {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+}
+
+h4 {
+    margin-left: 60px;
+    font-size: 23px;
+
+}
