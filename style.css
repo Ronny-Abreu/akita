@@ -3,15 +3,15 @@
 
 @font-face {
     font-family: 'FontLogo';
-    src: url('https://github.com/Ronny-Abreu/akita/blob/main/Pilowlava-Atome.woff2') format('woff2'),
-    url('https://github.com/Ronny-Abreu/akita/blob/main/Pilowlava-Atome.woff') format('woff');
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1727779858/Pilowlava-Atome_dzgbeg.woff2') format('woff2'),
+    url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1727779858/Pilowlava-Atome_ytybwe.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'NextFont';
-    src: url('COOPBL.TTF') format('truetype');
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1727779949/COOPBL_zs7afd.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
