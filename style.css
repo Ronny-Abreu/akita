@@ -16,6 +16,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Typefesse';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1727808958/Typefesse_Pleine_qzsyuu.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Typefesse2';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1727808958/Typefesse_Claire-Obscure_vucy39.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .yatra-one-regular {
     font-family: "Yatra One", system-ui;
     font-weight: 400;
@@ -33,6 +47,54 @@ body {
     color: #D1D5DB;
     font-family: 'Onest', system-ui, sans-serif;
 }
+
+.menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: transparent;
+    padding: 15px;
+    margin-left: 200px;
+    list-style-type: none;
+}
+
+.list a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-family: '
+    Onest', system-ui, sans-serif;
+}
+
+.list a:hover {
+    color: #20bcfc;
+}
+
+.logo {
+    margin-right: 50px;
+    font-family: 'Typefesse2', system-ui, sans-serif;
+    font-size: 40px;
+    color: #FFF;
+}
+
+.logoText {
+    color: #FFF;
+}
+
+hr {
+    width: 100%;
+    color: #1b1b1b;
+}
+
 
 .container {
     display: flex;
@@ -126,11 +188,3 @@ h4 {
 
 }
 
-
-.logo {
-    font-family: 'FontLogo', sans-serif;
-}
-
-.titlee {
-    font-family: 'NextFont', sans-serif;
-}
