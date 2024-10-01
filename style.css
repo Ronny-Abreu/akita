@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'FontLogo';
-    src: url('/fonts/pilowlava-master/Fonts/webfonts/Pilowlava-Atome.woff2') format('woff2'),
+    src: url('https://github.com/Ronny-Abreu/akita/blob/main/Pilowlava-Atome.woff2') format('woff2'),
     url('https://github.com/Ronny-Abreu/akita/blob/main/Pilowlava-Atome.woff') format('woff');
     font-weight: normal;
     font-style: normal;
