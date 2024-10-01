@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'NextFont';
-    src: url('/fonts/COOPBL.TTF') format('truetype');
+    src: url('https://github.com/Ronny-Abreu/akita/blob/main/COOPBL.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
