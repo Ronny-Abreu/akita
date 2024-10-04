@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 
 @font-face {
     font-family: 'FontLogo';
@@ -70,6 +71,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 5px 10px;
+    position: fixed;
 }
 
 .logo {
@@ -83,7 +85,7 @@ header {
 
 .nav__links {
     list-style: none;
-    display: flex;
+    display: flex
 }
 
 .nav__links li {
@@ -101,7 +103,9 @@ header {
 }
 
 .button__nav {
-    padding: 9px 25px;
+    width: 45px;
+    height: 45px;
+    padding: 10px 10px;
     background-color: transparent;
     border: 1px solid #2b2c33;
     border-radius: 8px;
@@ -111,6 +115,16 @@ header {
 
 .button__nav:hover {
     background-color: #2b2c33;
+}
+
+.modeSVG {
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 hr.divider {
@@ -140,13 +154,15 @@ hr.divider {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 65px;
+    font-weight: 600;
 }
 
 .info-container p {
     font-family: "Onest", sans-serif;
     font-style: normal;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 400;
+    text-align: justify;
 }
 
 span {
@@ -187,14 +203,12 @@ span {
 
 .container2 {
     margin-top: 100px;
-    display: flex;
     background-color: #1e1f23;
     padding: 20px;
 }
 
 .images {
     display: flex;
-    margin-left: 520px;
     gap: 8px;
 }
 
@@ -207,20 +221,26 @@ svg {
 h4 {
     margin-left: 60px;
     font-size: 23px;
-
+    font-weight: bold;
 }
-
 
 @media (max-width: 575px) {
     .container {
+        margin-top: 25px;
         flex-direction: column;
     }
     .container .info-container {
         order: 2;
     }
 
-    .container .info-container h1, p {
-        font-size: 55px;
+    .container .info-container p {
+        font-size: 18px;
+        max-width: 95%;
+    }
+
+    .container .info-container h1 {
+        text-align: center;
+        font-size: 36px;
     }
 
     .container .image-container {
@@ -228,4 +248,34 @@ h4 {
         margin-top: 50px;
         margin-left: 0;
     }
+    .image-container img {
+        width: 250px;
+        height: 250px;
+        margin-left: 0px;
+    }
+
+    .links-container {
+        margin-top: 20px;
+    }
+
+    .button-2, .button {
+        text-align: center;
+        width: 95%;
+        margin-top: 18px;
+    }
+    .h4sec {
+        font-size: 36px;
+    }
+    .images {
+        margin-top: 36px;
+        display: flex;
+    }
+    .images svg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.info-container {
+    max-width: 600px;
 }
