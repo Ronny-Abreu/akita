@@ -90,7 +90,7 @@ header {
 
 .nav__links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 8px;
 }
 
 .nav__links li a {
@@ -125,6 +125,7 @@ header {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    background-color: #0D0E12;
 }
 
 hr.divider {
@@ -227,15 +228,18 @@ h4 {
 @media (max-width: 575px) {
     .container {
         margin-top: 25px;
+        margin-left: 5px;
         flex-direction: column;
+        display: flex;
     }
     .container .info-container {
         order: 2;
     }
 
-    .container .info-container p {
+    .info-container p {
         font-size: 18px;
-        max-width: 95%;
+        max-width: 85%;
+        margin-left: 40px;
     }
 
     .container .info-container h1 {
@@ -256,23 +260,36 @@ h4 {
 
     .links-container {
         margin-top: 20px;
+        margin-left: 35px;
+        margin-right: 35px;
     }
 
     .button-2, .button {
         text-align: center;
-        width: 95%;
+        width: 98%;
         margin-top: 18px;
     }
     .h4sec {
-        font-size: 36px;
+        font-size: 30px;
+        align-items: center;
     }
     .images {
         margin-top: 36px;
+        margin-left: 80px;
         display: flex;
+        gap: 8;
     }
     .images svg {
         width: 60px;
         height: 60px;
+    }
+
+    .button__nav {
+        margin-left: 55px;
+    }
+
+    .nav__links {
+        margin-left: 45px;
     }
 }
 
