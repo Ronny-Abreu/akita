@@ -6,7 +6,7 @@
     <title>Aka's Page</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1d3efdbeda.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/png" href="https://res.cloudinary.com/dnesyeqdg/image/upload/v1727883301/favicon_fudvu4.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="/script.js"></script>
@@ -41,24 +41,37 @@
 
 </head>
 <body>
-    <header>
-        <img src="https://res.cloudinary.com/dnesyeqdg/image/upload/v1727997874/me_cqwwvk.png" alt="Aka Photo" class="logo">
-        <nav>
-            <ul class="nav__links">
-                <li class="li__nav"><a class="a__nav" href="#">Jendry</a></li>
-                <li class="li__nav"><a class="a__nav" href="#">Resources</a></li>
-                <li class="li__nav"><a class="a__nav" href="#">Language</a></li>
-            </ul>
-        </nav>
-        <a href="/resources.html">
-            <button class="button__nav" style="font-family: 'Poppins', sans-serif; font-weight: 600;">
-                <svg class="modeSVG" xmlns="http://www.w3.org/2000/svg"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
-        </button></a>
-            <!--<button class="flag__nav" style="font-family: 'Poppins', sans-serif; font-weight: 600;">
-                <span class="flagSVG">🇩🇴</span> -->
-        </button>
-    </header>
-    <hr class="divider">
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo">
+                <img src="https://res.cloudinary.com/dnesyeqdg/image/upload/v1727997874/me_cqwwvk.png" alt="Aka Photo" style="width: 48px; height: 48px; border-radius: 50%;">
+            </span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="https://luvrmoonss.vercel.app">A</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Aka</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <a id="icon-discord" href="https://open.spotify.com/playlist/3EAVAU25lPSOaaQfFiIBTR?si=0JOQJ-y7TC2X-qYZD2RELg&pi=u-qSjMfVVJSbiy&nd=1&dlsi=847e3743e9974a75" target="_blank" rel="noreferrer">
+                        <i class='bx bx-crown bx-tada' ></i> Akaito
+                    </a>
+                </div>
+            </div>
+            <div class="light-dark">
+                <a id="icon-spotify" href="https://open.spotify.com/playlist/3EAVAU25lPSOaaQfFiIBTR?si=0JOQJ-y7TC2X-qYZD2RELg&pi=u-qSjMfVVJSbiy&nd=1&dlsi=847e3743e9974a75" target="_blank" rel="noreferrer">
+                    <i class='bx bxl-spotify'></i>
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
         <!--INFORMACION-->
@@ -77,7 +90,9 @@
         <a class="button button-2" href="https://www.solo.to/daka" target="_blank" rel="noopener noreferrer">Husmear por mis redes</a>
     </div>
             <div class="container2">
-                <h4 class="h4sec">Con el interés <span>de aprender mis lenguajes favoritos</span>.</h4>
+                <h4 class="h4sec">Con el deseo de <span>saber mis lenguajes favs</span>.
+                    <!--<svg class="w-4" viewBox="0 0 16 16"><path fill="#22A55A" d="M16,7.64528384 C16,8.43528384 14.72,9.02528384 14.48,9.73528384 C14.24,10.4452838 14.92,11.7352838 14.48,12.3252838 C14.04,12.9152838 12.64,12.6752838 12.02,13.1252838 C11.4,13.5752838 11.23,14.9652838 10.48,15.2152838 C9.73,15.4652838 8.81,14.4152838 8.01,14.4152838 C7.21,14.4152838 6.26,15.4152838 5.54,15.2152838 C4.82,15.0152838 4.62,13.5752838 4,13.1252838 C3.38,12.6752838 2,12.9452838 1.54,12.3252838 C1.08,11.7052838 1.77,10.4852838 1.54,9.73528384 C1.31,8.98528384 0,8.43528384 0,7.64528384 C0,6.85528384 1.28,6.26528384 1.52,5.55528384 C1.76,4.84528384 1.08,3.55528384 1.52,2.96528384 C1.96,2.37528384 3.37,2.61528384 4,2.16528384 C4.63,1.71528384 4.78,0.32528384 5.53,0.04528384 C6.28,-0.23471616 7.2,0.87528384 8,0.87528384 C8.8,0.87528384 9.75,-0.12471616 10.47,0.07528384 C11.19,0.27528384 11.38,1.71528384 12,2.16528384 C12.62,2.61528384 14,2.34528384 14.46,2.96528384 C14.92,3.58528384 14.23,4.80528384 14.46,5.55528384 C14.69,6.30528384 16,6.85528384 16,7.64528384 Z"></path><polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="7.4 11.17 4 8.62 5 7.26 7 8.79 10.64 4 12 5"></polygon></svg>-->
+                </h4>
                 <div class="images">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520" class="svgs1">
                         <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
@@ -106,5 +121,38 @@
                 </div>
             </div>
 
+            <footer>
+                <div class="container__footer">
+                <hr class="divider__footer">
+                <div class="copys__footer">
+                    <a class="footer__clip" href="https://open.spotify.com/playlist/3EAVAU25lPSOaaQfFiIBTR?si=0JOQJ-y7TC2X-qYZD2RELg&pi=u-qSjMfVVJSbiy&nd=1&dlsi=847e3743e9974a75" target="_blank" rel="noreferrer">
+                        <p>© Aka &  Jendry, <span id="year"></span>. Casi todos los derechos reservados.</p>
+                    </a>
+                </div>
+                </div>
+            </footer>
+
+            <!--JAVASCRIPT-->
+
+            <script>
+                const body = document.querySelector("body"),
+                    nav = document.querySelector("nav"),
+                    searchToggle = document.querySelector(".searchToggle"),
+                    sidebarOpen = document.querySelector(".sidebarOpen"),
+                    siderbarClose = document.querySelector(".siderbarClose");
+                
+                //   js code to toggle sidebar
+                sidebarOpen.addEventListener("click" , () =>{
+                    nav.classList.add("active");
+                });
+                body.addEventListener("click" , e =>{
+                    let clickedElm = e.target;
+                    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+                        nav.classList.remove("active");
+                    }
+                });
+
+                document.getElementById("year").textContent = new Date().getFullYear();
+                </script>
 </body>
 </html>
