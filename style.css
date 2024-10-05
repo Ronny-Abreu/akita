@@ -51,88 +51,141 @@ body {
     font-family: 'Onest', system-ui, sans-serif;
 }
 
-hr.divider {
-    border: none;
-    height: 2px;
-    background-color: #22252b;
-    margin-top: 10px;
+:root{
+    --body-color: #0d0e12;
+    --nav-color: transparent;
+    --side-nav: #0D0E12;
+    --text-color: #FCFCFD;
+    --search-bar: #F2F2F2;
+    --search-text: #fcfcfd;
+}
+body{
+    background-color: var(--body-color);
 }
 
-.li__nav, .a__nav, .button__nav {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFF;
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 100;
+}
+
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-bar .sidebarOpen{
+    color: var(--text-color);
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+nav .nav-bar .logo a{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 16px;
+    font-family: 'Typefesse2', sans-serif;
+    color: var(--text-color);
     text-decoration: none;
 }
-
-header {
+.menu .logo-toggle{
+    display: none;
+}
+.nav-bar .nav-links{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding: 5px 10px;
-    position: fixed;
 }
-
-.logo {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-left: 30px;
-    margin-right: auto;
-}
-
-.nav__links {
+.nav-bar .nav-links li{
+    margin: 0 5px;
     list-style: none;
-    display: flex
+}
+.nav-links li a{
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-links li a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.nav-links li:hover a::before{
+    opacity: 1;
 }
 
-.nav__links li {
-    display: inline-block;
-    padding: 0px 8px;
+.nav-bar .darkLight-searchBox{
+    display: flex;
+    align-items: center;
 }
 
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-}
-
-.nav__links li a:hover {
-    color: #20bcfc;
-}
-
-.button__nav {
-    width: 45px;
-    height: 45px;
-    padding: 10px 10px;
-    background-color: transparent;
-    border: 1px solid #2b2c33;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-right: 25px;
-}
-
-.button__nav:hover {
-    background-color: #2b2c33;
-}
-
-.modeSVG {
-    width: 30px;
-    height: 30px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    background-color: #0D0E12;
-}
-
-hr.divider {
-    border: none;
-    height: 2px;
-    background-color: #22252b;
-    margin-top: 10px;
+@media (max-width: 790px) {
+    nav .nav-bar .sidebarOpen{
+        display: block;
+        
+    }
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: transparent;
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+    nav.active .menu{
+        left: -0%;
+    }
+    nav.active .nav-bar .navLogo a{
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .menu .logo-toggle{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-toggle .siderbarClose{
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav-bar .nav-links{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .nav-links li a{
+        display: block;
+        margin-top: 20px;
+    }
 }
 
 .container {
@@ -146,7 +199,7 @@ hr.divider {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    margin-left: 250px;
+    margin-left: 150px;
 }
 
 .info-container h1 {
@@ -188,7 +241,7 @@ span {
 }
 
 .button-2 {
-    background-color: #0D0E12;
+    background-color: transparent;
     border: 2px solid #2b2c33;
     border-radius: 8px;
     color: rgb(220, 220, 220);
@@ -203,6 +256,8 @@ span {
 }
 
 .container2 {
+    display: flex;
+    align-items: center;
     margin-top: 100px;
     background-color: #1e1f23;
     padding: 20px;
@@ -211,6 +266,8 @@ span {
 .images {
     display: flex;
     gap: 8px;
+    margin-left: auto;
+    margin-right: 66px;
 }
 
 svg {
@@ -220,9 +277,10 @@ svg {
 }
 
 h4 {
-    margin-left: 60px;
-    font-size: 23px;
+    margin-left: 56px;
+    font-size: 32px;
     font-weight: bold;
+    max-width: 400px;
 }
 
 @media (max-width: 575px) {
@@ -269,30 +327,106 @@ h4 {
         width: 98%;
         margin-top: 18px;
     }
-    .h4sec {
-        font-size: 30px;
-        align-items: center;
+
+    .container2 {
+        display: block;
+        margin-top: 100px;
+        background-color: #1e1f23;
+        padding: 20px;
     }
+    
     .images {
-        margin-top: 36px;
-        margin-left: 80px;
-        display: flex;
-        gap: 8;
+        margin-left: 65px;
+        margin-top: 25px;
     }
-    .images svg {
+    
+    svg {
         width: 60px;
         height: 60px;
+        border-radius: 8px;
     }
-
-    .button__nav {
-        margin-left: 55px;
-    }
-
-    .nav__links {
-        margin-left: 45px;
+    
+    h4 {
+        margin-left: 56px;
+        font-size: 32px;
+        font-weight: bold;
+        max-width: 350px;
     }
 }
 
 .info-container {
     max-width: 600px;
+}
+
+
+
+#icon-discord {
+    display: flex;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0D0E12;
+    background: linear-gradient(to right, #c084fc, #fca5a5);
+    border-radius: 5px;
+}
+
+#icon-discord:hover {
+    background: linear-gradient(to right, #d8b4fe, #fecaca)
+}
+
+#icon-discord i {
+    margin-right: 3px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+#icon-spotify {
+    padding: 6px 6px;
+    background-color: #0D0E12;
+    border: 2px solid #2b2c33;
+    border-radius: 8px;
+    color: rgb(220, 220, 220);
+}
+
+#icon-spotify i {
+    font-size: 15px;
+}
+
+#icon-spotify:hover {
+    background-color: #2b2c33;
+}
+
+footer {
+    background-color: #0D0E12;
+    font-family: "DM Sans", sans-serif;
+    color: #FCFCFD;
+    text-align: center;
+    padding: 20px;
+}
+
+.container__footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+#year:hover {
+    color: #09f;
+    cursor: pointer;
+}
+
+#year {
+    color: #FCFCFD;
+}
+
+.divider__footer {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.footer__clip {
+    text-decoration: none;
+    color: #FCFCFD;
 }
