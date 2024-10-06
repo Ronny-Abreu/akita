@@ -56,17 +56,11 @@
    50%  {width:60px;height: 60px;transform: rotate(180deg)}
    100% {transform: rotate(360deg)}
 }
-
-/* Ocultar el contenido de la página */
-        #all-page {
-            display: none; /* Ocultar contenido inicialmente */
-        }
     </style>
 
 </head>
 <body>
     <div id="loader" class="loader"></div>
-    <div id="all-page">
     <nav>
         <div class="nav-bar">
             <i class='bx bx-menu sidebarOpen' ></i>
@@ -157,7 +151,6 @@
                 </div>
                 </div>
             </footer>
-    </div>
 
             <!--JAVASCRIPT-->
 
@@ -185,8 +178,6 @@
         window.onload = function() {
             // Ocultar el loader
             document.getElementById('loader').style.display = 'none';
-            // Mostrar el contenido
-            document.getElementById('all-page').style.display = 'block';
         };
     </script>
 </body>
