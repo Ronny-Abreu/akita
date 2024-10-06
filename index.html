@@ -44,7 +44,7 @@
         .loader {
   width: 40px;
   height: 40px;
-  color: #f03355;
+  color: #09f;
   background:
     conic-gradient(from  -45deg at top    20px left 50% ,#0000 ,currentColor 1deg 90deg,#0000 91deg),
     conic-gradient(from   45deg at right  20px top  50% ,#0000 ,currentColor 1deg 90deg,#0000 91deg),
@@ -56,12 +56,17 @@
    50%  {width:60px;height: 60px;transform: rotate(180deg)}
    100% {transform: rotate(360deg)}
 }
+
+/* Ocultar el contenido de la página */
+        #all-page {
+            display: none; /* Ocultar contenido inicialmente */
+        }
     </style>
 
 </head>
 <body>
     <div id="loader" class="loader"></div>
-    
+    <div id="all-page">
     <nav>
         <div class="nav-bar">
             <i class='bx bx-menu sidebarOpen' ></i>
@@ -152,6 +157,7 @@
                 </div>
                 </div>
             </footer>
+    </div>
 
             <!--JAVASCRIPT-->
 
@@ -175,8 +181,12 @@
 
                 document.getElementById("year").textContent = new Date().getFullYear();
         
-                window.onload = function() {
+                // Loader
+        window.onload = function() {
+            // Ocultar el loader
             document.getElementById('loader').style.display = 'none';
+            // Mostrar el contenido
+            document.getElementById('content').style.display = 'block';
         };
     </script>
 </body>
