@@ -42,19 +42,22 @@
     <style>
         /* CSS del loader */
         .loader {
-  width: 40px;
-  height: 40px;
-  color: #09f;
-  background:
-    conic-gradient(from  -45deg at top    20px left 50% ,#0000 ,currentColor 1deg 90deg,#0000 91deg),
-    conic-gradient(from   45deg at right  20px top  50% ,#0000 ,currentColor 1deg 90deg,#0000 91deg),
-    conic-gradient(from  135deg at bottom 20px left 50% ,#0000 ,currentColor 1deg 90deg,#0000 91deg),
-    conic-gradient(from -135deg at left   20px top  50% ,#0000 ,currentColor 1deg 90deg,#0000 91deg);
-  animation: l4 1.5s infinite cubic-bezier(0.3,1,0,1);
-}
-@keyframes l4 {
-   50%  {width:60px;height: 60px;transform: rotate(180deg)}
-   100% {transform: rotate(360deg)}
+    width: 40px; /* Ancho del loader */
+    height: 40px; /* Alto del loader */
+    color: #09f;
+    background: 
+        conic-gradient(from -45deg at top 20px left 50%, #0000, currentColor 1deg 90deg, #0000 91deg),
+        conic-gradient(from 45deg at right 20px top 50%, #0000, currentColor 1deg 90deg, #0000 91deg),
+        conic-gradient(from 135deg at bottom 20px left 50%, #0000, currentColor 1deg 90deg, #0000 91deg),
+        conic-gradient(from -135deg at left 20px top 50%, #0000, currentColor 1deg 90deg, #0000 91deg);
+    animation: l4 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+    
+    /* Estilos para centrar el loader */
+    position: fixed; /* Posicionamiento fijo */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar la posición al centro */
+    z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
 }
     </style>
 
