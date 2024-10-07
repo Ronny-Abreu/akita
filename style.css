@@ -318,7 +318,7 @@ h4 {
 
     .links-container {
         margin-top: 20px;
-        margin-left: 35px;
+        margin-left: 48px;
         margin-right: 35px;
     }
 
@@ -336,8 +336,9 @@ h4 {
     }
     
     .images {
-        margin-left: 65px;
+        margin-left: 35px;
         margin-top: 25px;
+        gap: 12px;
     }
     
     svg {
@@ -347,10 +348,14 @@ h4 {
     }
     
     h4 {
-        margin-left: 56px;
-        font-size: 32px;
+        margin-left: 25px;
+        font-size: 36px;
         font-weight: bold;
-        max-width: 350px;
+        max-width: 400px;
+    }
+
+    .spanLeft {
+        margin-left: 77px;
     }
 }
 
