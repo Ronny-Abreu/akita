@@ -123,15 +123,15 @@
             
                         <!--ENTRY HEADER-->
 
-            <div class="entryHeader">
-                <div class="entry__date__1">
-                    <h2>PROJECTS</h2>
-                    <p>Desliza para ver</p>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
+                        <div class="carousel-container">
+                            <button class="carousel-btn carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+                            <div class="carousel">
+                                <img class="carousel-item" src="/lorem1.jpg" alt="Image 1">
+                                <img class="carousel-item" src="/lorem2.png" alt="Image 2">
+                                <img class="carousel-item" src="/lorem3.webp" alt="Image 3">
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveSlide(1)">&#10095;</button>
+                        </div>
 
             <footer>
                 <div class="container__footer">
@@ -163,6 +163,20 @@
                         nav.classList.remove("active");
                     }
                 });
+
+                let currentIndex = 0;
+
+function moveSlide(direction) {
+    const carousel = document.querySelector('.carousel');
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+
+    currentIndex = (currentIndex + direction + totalItems) % totalItems;
+    const offset = -currentIndex * 100;
+
+    carousel.style.transform = `translateX(${offset}%)`;
+}
+
 
                 document.getElementById("year").textContent = new Date().getFullYear();
     </script>
