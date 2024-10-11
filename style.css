@@ -88,7 +88,6 @@ nav{
 nav .nav-bar{
     position: relative;
     height: 100%;
-    max-width: 1000px;
     width: 100%;
     background-color: transparent;
     backdrop-filter: blur(10px);
@@ -371,6 +370,10 @@ h4 {
     .spanLeft {
         margin-left: 77px;
     }
+
+    .container__01 {
+    display: block;
+}
 }
 
 .info-container {
