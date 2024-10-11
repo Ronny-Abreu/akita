@@ -511,5 +511,9 @@ footer {
 
     .container__01 {
     display: block;
-}
+    }
+
+    .section__01, .section__02, .section__03 {
+        width: 90%;
+    }
 }
