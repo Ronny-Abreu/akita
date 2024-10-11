@@ -296,91 +296,11 @@ h4 {
     max-width: 400px;
 }
 
-@media (max-width: 575px) {
-    .container {
-        margin-top: 25px;
-        margin-left: 5px;
-        flex-direction: column;
-        display: flex;
-    }
-    .container .info-container {
-        order: 2;
-    }
 
-    .info-container p {
-        font-size: 18px;
-        max-width: 85%;
-        margin-left: 40px;
-    }
-
-    .container .info-container h1 {
-        text-align: center;
-        font-size: 36px;
-    }
-
-    .container .image-container {
-        order: 1;
-        margin-top: 50px;
-        margin-left: 0;
-    }
-    .image-container img {
-        width: 250px;
-        height: 250px;
-        margin-left: 0px;
-    }
-
-    .links-container {
-        margin-top: 20px;
-        margin-left: 48px;
-        margin-right: 35px;
-    }
-
-    .button-2, .button {
-        text-align: center;
-        width: 98%;
-        margin-top: 18px;
-    }
-
-    .container2 {
-        display: block;
-        margin-top: 100px;
-        background-color: #1e1f23;
-        padding: 20px;
-    }
-    
-    .images {
-        margin-left: 35px;
-        margin-top: 25px;
-        gap: 12px;
-    }
-    
-    svg {
-        width: 60px;
-        height: 60px;
-        border-radius: 8px;
-    }
-    
-    h4 {
-        margin-left: 25px;
-        font-size: 36px;
-        font-weight: bold;
-        max-width: 400px;
-    }
-
-    .spanLeft {
-        margin-left: 77px;
-    }
-
-    .container__01 {
-    display: block;
-}
-}
 
 .info-container {
     max-width: 600px;
 }
-
-
 
 #icon-discord {
     display: flex;
@@ -512,4 +432,84 @@ footer {
 .footer__clip {
     text-decoration: none;
     color: #FCFCFD;
+}
+
+@media (max-width: 575px) {
+    .container {
+        margin-top: 25px;
+        margin-left: 5px;
+        flex-direction: column;
+        display: flex;
+    }
+    .container .info-container {
+        order: 2;
+    }
+
+    .info-container p {
+        font-size: 18px;
+        max-width: 85%;
+        margin-left: 40px;
+    }
+
+    .container .info-container h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .container .image-container {
+        order: 1;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .image-container img {
+        width: 250px;
+        height: 250px;
+        margin-left: 0px;
+    }
+
+    .links-container {
+        margin-top: 20px;
+        margin-left: 48px;
+        margin-right: 35px;
+    }
+
+    .button-2, .button {
+        text-align: center;
+        width: 98%;
+        margin-top: 18px;
+    }
+
+    .container2 {
+        display: block;
+        margin-top: 100px;
+        background-color: #1e1f23;
+        padding: 20px;
+    }
+    
+    .images {
+        margin-left: 35px;
+        margin-top: 25px;
+        gap: 12px;
+    }
+    
+    svg {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+    }
+    
+    h4 {
+        margin-left: 25px;
+        font-size: 36px;
+        font-weight: bold;
+        max-width: 400px;
+    }
+
+    .spanLeft {
+        margin-left: 77px;
+    }
+
+    .container__01 {
+    display: block;
+}
 }
