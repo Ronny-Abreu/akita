@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
@@ -29,6 +30,13 @@
 @font-face {
     font-family: 'Typefesse2';
     src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1727808958/Typefesse_Claire-Obscure_vucy39.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontBonita';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1728604446/FlechaM-Medium_nzjhpc.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -116,7 +124,8 @@ nav .nav-bar .logo a{
 .nav-links li a{
     position: relative;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     color: var(--text-color);
     text-decoration: none;
     padding: 10px;
@@ -204,7 +213,7 @@ nav .nav-bar .logo a{
 
 .info-container h1 {
     padding-bottom: 15px;
-    font-family: "NextFont", sans-serif;
+    font-family: "fontBonita", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 65px;
@@ -404,50 +413,65 @@ h4 {
     background-color: #2b2c33;
 }
 
-.carousel-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.carousel {
+.container__01 {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.carousel-item {
-    min-width: 100%;
-    height: 400px; /* Ajusta el alto según tus necesidades */
-    object-fit: cover;
+.section__01, .section__02, .section__03 {
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Aseguramos que los botones estén siempre visibles */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
+.section__02 {
+    background-color: #ebf0ff;
+}
+
+.section__03 {
+    background-color: #ffe0d5;
+}
+
+.section__01:hover, .section__02:hover, .section__03:hover {
+    transform: scale(1.05);
+}
+
+.section__01 h2, .section__02 h2, .section__03 h2 {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    line-height: 2.5rem;
+    color: #0009;
+}
+
+.section__01 h2 {
+    font-size: 1.500em;
+}
+
+.section__02 h2 {
+    font-size: 1.750em;
+}
+
+.section__03 h2 {
+    font-size: 1.850em;
+}
+
+.section__01 p, .section__02 p, .section__03 p {
+    font-size: 1.12rem;
+    color: #666;
+    font-family: 'Poppins';
+}
+
+.section__01 input {
+    width: 100%;
     padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    z-index: 100; /* Mantén los botones siempre por encima del contenido */
-    display: block; /* Siempre visibles */
-}
-
-.carousel-prev {
-    left: 0;
-}
-
-.carousel-next {
-    right: 0;
-}
-
-.carousel-btn:hover {
-    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-top: 10px;
 }
 
 footer {
