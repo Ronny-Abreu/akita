@@ -422,7 +422,7 @@ h4 {
     bottom: 45px;
     left: 0;
     margin-left: 25px;
-    width: 24%;
+    width: 30%;
 }
 
 .btn__entry3rd {
@@ -448,6 +448,7 @@ h4 {
 .section__02 {
     background-color: #ebf0ff;
     position: relative;
+    overflow: hidden;
 }
 
 .section__03 {
@@ -462,8 +463,9 @@ h4 {
 .section__02 img {
     position: absolute;
     bottom: 0;
+    left: 130px;
     right: 0;
-    width: 300px;
+    width: 250px;
     z-index: 1;
 }
 
@@ -621,12 +623,12 @@ footer {
     }
 
     .section__01, .section__02, .section__03 {
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: 30px;
     }
 
     .section__01 {
-        width: 400px;
+        max-width: 400px;
     }
 
     .section__01 img {
@@ -635,9 +637,22 @@ footer {
 
     .section__02 {
         height: 350px;
+        max-width: 350px;
+    }
+
+    .section__02 img
+
+    .btn__entrySecondary {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+
+    .section__02 p {
+        font-size: 1rem;
     }
 
     .section__03 {
         height: 210px;
+        max-width: 350px;
     }
 }
