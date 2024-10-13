@@ -351,8 +351,8 @@ h4 {
 
 .h2__entry {
     display: flex;
-    margin-top: 85px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 0;
 }
 
 .h2__entry h2 {
@@ -511,6 +511,48 @@ h4 {
     cursor: pointer;
 }
 
+.oferta__section {
+    margin-top: 85px;
+    background-color: #d1d9ef;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.oferta__section h2 {
+    font-size: 36px;
+}
+
+.btn__oferta {
+    display: flex;
+    color: #0D0E12;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #ffe0d5;
+    padding: 8px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.btn__oferta:hover {
+    cursor: pointer;
+    background-color: #fccdbc;
+}
+
+.svg__oferta {
+    width: 32px;
+    height: 24px;
+    margin-right: 3px;
+}
+
+.btn__ofertaContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
 footer {
     background-color: var(--body-color);
     font-family: "DM Sans", sans-serif;
@@ -623,7 +665,7 @@ footer {
     }
 
     .section__01, .section__02, .section__03 {
-        margin-left: 20px;
+        margin-left: 16px;
         margin-top: 30px;
     }
 
@@ -654,5 +696,14 @@ footer {
     .section__03 {
         height: 210px;
         max-width: 350px;
+    }
+
+    .oferta__section h2 {
+        margin-left: 0;
+        font-size: 32px;
+    }
+
+    .btn__ofertaContainer {
+        margin-left: 25px;
     }
 }
