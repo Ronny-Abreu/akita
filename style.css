@@ -1,5 +1,6 @@
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
@@ -72,6 +73,62 @@
 @font-face {
     font-family: 'PatagoniaLI';
     src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729423106/BelweStd-Light_ncktbs.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gabineteThin';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729460495/CabinetGrotesk-Thin_r6nhf2.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gabineteBlack';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729460563/CabinetGrotesk-Black_cmeihz.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gabineteBold';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729460563/CabinetGrotesk-Bold_irhlal.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gabineteExtraBold';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729460564/CabinetGrotesk-Extrabold_nj1rq0.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gabineteExtraLight';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729460564/CabinetGrotesk-Extralight_gwupwo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gabineteLight';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729460565/CabinetGrotesk-Light_kgawrv.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gabineteMedium';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729460565/CabinetGrotesk-Medium_pekxdd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gabineteRegular';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729460566/CabinetGrotesk-Regular_ngdv1b.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -543,6 +600,7 @@ h4 {
 
 .oferta__section h2 {
     font-size: 36px;
+    font-family: 'gabineteBlack', sans-serif;
 }
 
 .btn__oferta {
@@ -648,6 +706,95 @@ h4 {
     vertical-align: middle;
     margin-right: 1px;
     padding-bottom: 3px;
+}
+
+/* SLIDER SECTION */
+
+
+.slide-text {
+    background-color: transparent;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-h2 {
+    font-size: 45px;
+    padding-right: 10px;
+    color: #0D0E12;
+    font-family: 'gabineteBlack', sans-serif;
+    font-weight: bold;
+    text-align: middle;
+}
+
+.coutry {
+    overflow: hidden;
+}
+
+.slide-ul, .slide-li {
+    color: #09f;
+    font-weight: bold;
+    list-style: none;
+}
+
+.slide-ul {
+    width: 220px;
+    height: 70px;
+    position: relative;
+    animation: slide 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+.slide-li {
+    position: absolute;
+    height: 70px;
+    top: 200%;
+    line-height: 70px;
+    font-size: 30px;
+    font-family: 'gabineteExtraBold', sans-serif;
+    font-weight: bold;
+    text-align: middle;
+} 
+
+.slide-ul li:first-child {
+    top: 100%;
+}
+
+.slide-ul li:last-child {
+    top: 300%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    15%, 30% {
+        transform: translateY(-100%);
+    }
+    45%, 60% {
+        transform: translateY(-200%);
+    }
+    75%, 90% {
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
 }
 
 footer {
@@ -810,6 +957,7 @@ footer {
     .img__project1, .img__project2 {
         height: 222px;
         max-width: 350px;
+        margin-left: 30px;
     }
 
     .img__project2 {
@@ -817,7 +965,10 @@ footer {
     }
 
     .info__project1, .info__project2 {
+        max-width: 80%;
+    }
+
+    .projects__section {
         padding-left: 0;
-        max-width: 85%;
     }
 }
