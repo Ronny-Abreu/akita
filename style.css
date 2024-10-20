@@ -799,7 +799,7 @@ h4 {
 
 footer {
     background-color: var(--body-color);
-    font-family: "DM Sans", sans-serif;
+    font-family: 'gabineteExtraBold', sans-serif;
     color: #1B1B1F;
     text-align: center;
     padding: 20px;
@@ -970,5 +970,19 @@ footer {
 
     .projects__section {
         padding-left: 0;
+    }
+
+    .slide-text {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        height: 30vh;
+        width: 80%;
+        display: block;
+        flex-direction: column;
+        margin-left: 125px;
+    }
+
+    .info__project2 h2 {
+        margin-top: 12px;
     }
 }
