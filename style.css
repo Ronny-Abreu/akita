@@ -55,6 +55,27 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PatagoniaCON';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729423106/BelweStd-Condensed_fngyjq.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PatagoniaME';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729423106/BelweStd-Medium_hqclxn.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PatagoniaLI';
+    src: url('https://res.cloudinary.com/dnesyeqdg/raw/upload/v1729423106/BelweStd-Light_ncktbs.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -562,6 +583,7 @@ h4 {
 }
 
 .projects__section h2 {
+    font-family: 'PatagoniaME', sans-serif;
     margin-bottom: 5px;
 }
 
@@ -580,6 +602,10 @@ h4 {
 
 .project__p1 {
     margin-bottom: 10px;
+}
+
+.projects__p2 {
+    margin-bottom: 18px;   
 }
 
 .img__project1 {
@@ -606,15 +632,22 @@ h4 {
     font-weight: 600;
     color: #59606b;
     background-color: #d0d5da;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid rgb(130, 130, 130);
-    padding: 2px 4px;
+    padding: 4px 8px;
+}
+
+.link__project:hover {
+    background-color: #bebebe;
 }
 
 .svg__projects {
     width: 25px;
     height: 25px;
     color: #0D0E12;
+    vertical-align: middle;
+    margin-right: 1px;
+    padding-bottom: 3px;
 }
 
 footer {
@@ -746,8 +779,6 @@ footer {
         max-width: 350px;
     }
 
-    .section__02 img
-
     .btn__entrySecondary {
         margin-left: 15px;
         padding-left: 15px;
@@ -769,5 +800,24 @@ footer {
 
     .btn__ofertaContainer {
         margin-left: 25px;
+    }
+
+    .first__info, .second__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img__project1, .img__project2 {
+        height: 222px;
+        max-width: 350px;
+    }
+
+    .img__project2 {
+        margin-top: 25px;
+    }
+
+    .info__project1, .info__project2 {
+        padding-left: 0;
+        max-width: 85%;
     }
 }
