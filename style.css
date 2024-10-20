@@ -224,7 +224,7 @@ nav .nav-bar .logo a{
 
 .info-container h1 {
     padding-bottom: 15px;
-    font-family: "fontBonita", sans-serif;
+    font-family: "nextFont", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 65px;
@@ -553,6 +553,70 @@ h4 {
     margin-left: 70px;
 }
 
+/* PROJECTS SECTION */
+
+.projects__section {
+    padding-top: 100px;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.projects__section h2 {
+    margin-bottom: 5px;
+}
+
+.projects__section p {
+    font-weight: 500;
+}
+
+.first__info {
+    display: flex;
+}
+
+.info__project1 {
+    padding-left: 30px;
+    max-width: 50%;
+}
+
+.project__p1 {
+    margin-bottom: 10px;
+}
+
+.img__project1 {
+    margin-bottom: 20px;
+}
+
+.second__info {
+    display: flex;
+}
+
+.info__project2 {
+    padding-left: 30px;
+    max-width: 50%;
+}
+
+.img__project1, .img__project2 {
+    width: 390px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.link__project {
+    text-decoration: none;
+    font-weight: 600;
+    color: #59606b;
+    background-color: #d0d5da;
+    border-radius: 3px;
+    border: 1px solid rgb(130, 130, 130);
+    padding: 2px 4px;
+}
+
+.svg__projects {
+    width: 25px;
+    height: 25px;
+    color: #0D0E12;
+}
+
 footer {
     background-color: var(--body-color);
     font-family: "DM Sans", sans-serif;
@@ -700,7 +764,7 @@ footer {
 
     .oferta__section h2 {
         margin-left: 0;
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .btn__ofertaContainer {
